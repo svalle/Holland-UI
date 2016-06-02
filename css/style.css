@@ -1,0 +1,177 @@
+html,body {
+			height: 100%;
+}
+.pano {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    cursor: move;
+}
+.pano .controls {
+    position: relative;
+    top: 40%;
+    z-index: 9999;
+}
+.pano .controls a {
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    color: #eee;
+    font-size: 6em;
+    width: 20px;
+    height: 20px;
+}
+.pano .controls a.left {
+    left: 25px;
+}
+.pano .controls a.right {
+    right: 25px;
+}
+.pano.moving .controls a {
+    opacity: 0.4;
+    color: #eee;
+}
+
+map{
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0.2;
+}
+
+.main_content{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;    
+}
+
+.layer{
+    position: absolute;
+    /*background-color: #c0c0c0;*/
+    width: 100%; 
+    height: 100%;
+    margin:0 auto;
+    overflow:hidden;
+    /*opacity: 0.7;*/
+}
+
+div.line{
+    transform-origin: 0 0;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 50px;
+    top: 475.5px;
+    left: 354.5px;
+}
+
+div.line2{
+    transform-origin: 0 0;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    transform: rotate(0);
+    width: 150px;
+    top: 474.5px;
+    left: 355.5px;
+}
+
+div.line3{
+    transform-origin: 0 0;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 50px;
+    top: 620.5px;
+    left: 930.5px;
+}
+
+div.line4{
+    transform-origin: 0 0;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    transform: rotate(0);
+    width: 165px;
+    top: 619.5px;
+    left: 930.5px;
+}
+
+p.speech1 {
+    position: relative;
+    top: 300px;
+    left: 215px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p.speech2 {
+    position: relative;
+    top: 420px;
+    left: 792px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#zoom_01{
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    top: 289px;
+    left: 289px;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+/* 
+.layer:after{
+    content:'';
+    position:absolute;
+    left:10%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:50%;
+    width:150px; height:150px;
+    box-shadow: 0px 0px 0px 2000px #c0c0c0;
+}*/
+
+
+area{
+    background-color: red;
+    opacity: 0.4;
+}
+
+
+.grid {
+    border: 1px solid #ccc;
+    border-width: 1px 0 0 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grid div {
+    border: 1px solid #ccc;
+    border-width: 0 1px 1px 0;
+    float: left;
+}
+
+.active_circle{
+    border-radius:50%;
+    background-color: red;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Holland Design</title> 
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="myPano" class="pano">
+			<div class="controls">
+				<a href="#" class="left">&laquo;</a>
+				<a href="#" class="right">&raquo;</a>
+			</div>
+            <!--
+            <img src="./sphere.jpg" width="500" height="200" alt="Planets" usemap="#planetmap">
+            <map name="planetmap">
+                <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+                <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+                <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+            </map>
+            -->
+            
+            <div class="main_content">
+               <!--
+                    <div class="layer">
+                    
+                </div> 
+                -->
+               <!-- 
+                <svg viewBox="0 0 400 200" width="400" height="200">
+                        <path d="M0,0 L400,0 L400,200 L0,200z M200,100 m-50,0 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0z" fill="#c0c0c0" />
+                </svg>
+                
+                -->
+                <!--                     
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="#c0c0c0" />
+                </svg>
+                
+                -->
+                <img id="zoom_01" src="img/sphere1.jpg" style="opacity: 0;" data-zoom-image="img/sphere1.jpg"/>                   
+                <svg class="layer" >
+                    <defs>
+                        <mask id="mask">
+                            <rect width="100%" height="100%" fill="white"/>
+                            <circle cx="357" cy="357" stroke="black" stroke-width="1" r="70" fill="black"/>
+                            <circle cx="930" cy="500" stroke="black" stroke-width="1" r="70" fill="black"/>
+                        </mask>
+                    </defs>
+                    <rect width="100%" height="100%" style="fill:rgba(192,192,192,.4);" mask="url(#mask)"/>
+                    <circle cx="357" cy="357" stroke="black" stroke-width="1" r="70" fill="rgba(0, 0, 0, 0)"/>
+                    
+                    <circle cx="930" cy="500" stroke="black" stroke-width="1" r="70" fill="rgba(0, 0, 0, 0)"/>
+                    <foreignObject class="node" x="150" y="150" width="200" height="100">
+                        <body xmlns="http://www.w3.org/1999/xhtml">
+                                
+                            <p class="speech1">High-end finishes!</p>
+                            <p class="speech2">World class views!</p>
+                            <div class="line">
+                            </div>
+                            <div class="line2">
+                            </div>
+                            <div class="line3">
+                            </div>
+                            <div class="line4">
+                            </div>
+                        </body>
+                    </foreignObject>
+                </svg>
+                
+			     <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                    </nav>	
+			</div>
+            
+               
+		</div>     
+        
+        <script src="vendors/jquery-1.12.4.js"></script>
+		<script src="vendors/jquery.pano.js"></script>
+        <script src="vendors/jquery.elevateZoom.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- <script src="js/jquery-1.12.4.min.js"></script>  -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/grid.js"></script>
+	</body>
+</html>
