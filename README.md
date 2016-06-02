@@ -1,1 +1,1 @@
-# Repository for Holland Residential static HTML
+# Repository for Holland Residential static HTML development.
